@@ -25,6 +25,7 @@ import {
   Provider,
   Text,
   TextInput,
+  // @ts-ignore
 } from "react-native-paper";
 
 import type {
@@ -118,6 +119,7 @@ const LatestWorkout: React.FC<{
       <List.Item
         title="Energy"
         // eslint-disable-next-line react/no-unstable-nested-components
+        // @ts-ignore
         left={(props) => <List.Icon {...props} icon="fire" />}
         description={
           latestValue?.totalEnergyBurned
@@ -130,6 +132,7 @@ const LatestWorkout: React.FC<{
       <List.Item
         title="Metadata"
         // eslint-disable-next-line react/no-unstable-nested-components
+        // @ts-ignore
         left={(props) => <List.Icon {...props} icon="database" />}
         description={
           latestValue?.metadata
@@ -140,6 +143,7 @@ const LatestWorkout: React.FC<{
       <List.Item
         title="Device"
         // eslint-disable-next-line react/no-unstable-nested-components
+        // @ts-ignore
         left={(props) => <List.Icon {...props} icon="watch" />}
         description={
           latestValue?.device ? `${latestValue.device.name}` : "No data found"
